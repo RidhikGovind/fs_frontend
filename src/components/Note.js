@@ -1,9 +1,13 @@
 import React from 'react';
 
-function Note({ note }) {
+function Note({ note,toggleImportance }) {
+
 	return (
 		<div>
-			<li>{note.content}</li>
+			<li>
+				{note.content}
+				<button onClick={toggleImportance}>Press</button>
+			</li>
 		</div>
 	);
 }
